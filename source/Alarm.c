@@ -21,6 +21,28 @@ struct Zones
 struct Alarms alarms;
 struct Zones zones;
 
+int init_alarms()
+{
+    alarms.alarm1 = 0;
+    alarms.alarm2 = 0;
+    alarms.alarm3 = 0;
+    alarms.alarm4 = 0;
+    alarms.alarm5 = 0;
+    alarms.alarm6 = 0;
+    alarms.alarm7 = 0;
+    alarms.alarm8 = 0;
+    alarms.alarm9 = 0;
+    return 0;
+}
+
+int init_zone()
+{
+    zones.zone1 = 0;
+    zones.zone2 = 0;
+    zones.zone3 = 0;
+    return 0;
+}
+
 int update_zones()
 {
 	if (alarms.alarm1 == 0 && alarms.alarm2 == 0 && alarms.alarm3 == 0)

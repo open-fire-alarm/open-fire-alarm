@@ -1,1 +1,1 @@
-unsigned char commande_utilisateur ();
+int commande_utilisateur ();
