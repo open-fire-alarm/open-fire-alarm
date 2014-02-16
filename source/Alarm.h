@@ -21,4 +21,7 @@ struct Zones
 struct Alarms alarms;
 struct Zones zones;
 
+int init_alarms();
+int init_zone();
+
 int update_zones();

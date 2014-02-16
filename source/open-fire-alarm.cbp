@@ -38,6 +38,7 @@
 		<Unit filename="Display.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Display.h" />
 		<Unit filename="Extraction.c">
 			<Option compilerVar="CC" />
 		</Unit>
