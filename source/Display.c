@@ -3,7 +3,7 @@
 
 int display()
 {
-    if(zones.zone1 == 0)
+    if(zones.zone1 == 1)
     {
         printf("zone 1 safe\n\r");
     }
@@ -11,7 +11,7 @@ int display()
     {
         printf("zone 1 on fire\n\r");
     }
-    if(zones.zone2 == 0)
+    if(zones.zone2 == 1)
     {
         printf("zone 2 safe\n\r");
     }
@@ -19,7 +19,7 @@ int display()
     {
         printf("zone 2 on fire\n\r");
     }
-    if(zones.zone3 == 0)
+    if(zones.zone3 == 1)
     {
         printf("zone 3 safe\n\r");
     }
@@ -30,7 +30,7 @@ int display()
 
     printf("\n\r");
 
-    if(zones.zone1 == 0)
+    if(zones.zone1 == 1)
     {
         display_zone1_safe();
     }
@@ -38,7 +38,7 @@ int display()
     {
         display_zone1_fire();
     }
-    if(zones.zone2 == 0)
+    if(zones.zone2 == 1)
     {
         display_zone2_safe();
     }
@@ -46,7 +46,7 @@ int display()
     {
         display_zone2_fire();
     }
-    if(zones.zone3 == 0)
+    if(zones.zone3 == 1)
     {
         display_zone3_safe();
     }
