@@ -42,12 +42,20 @@
 		<Unit filename="Extraction.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Init.h" />
 		<Unit filename="Input.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Options_menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Options_menu.h" />
 		<Unit filename="Output.c">
 			<Option compilerVar="CC" />
 		</Unit>

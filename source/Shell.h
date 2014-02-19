@@ -1,1 +1,1 @@
-int commande_utilisateur ();
+int set_utilisateur_alarms ();

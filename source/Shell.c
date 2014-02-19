@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "Alarm.h"
 
-int commande_utilisateur ()
+int set_utilisateur_alarms ()
 {
 	printf("alarm 1 = ");
 	scanf("%d", &alarms.alarm1);

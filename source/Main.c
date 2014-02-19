@@ -1,23 +1,19 @@
-#include "Alarm.h"
-#include "Shell.h"
+#include "Init.h"
 #include "Display.h"
-#include "Password.h"
+#include "Options_menu.h"
 
 int main()
 {
     int stop = 0;
 
-	init_alarms();
-	init_zone();
-	init_password();
+    init_all();
 
     display();
 
-	while (!stop)
-	{
-        commande_utilisateur();
-        update_zones();
-        display();
-	}
+    while(!stop)
+    {
+        options_menu();
+    }
+
 	return 0;
 }
