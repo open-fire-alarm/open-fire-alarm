@@ -33,8 +33,8 @@ int change_password()
     }
     printf("press the new password\n\r");
     scanf("%s",old_password);
-    printf("password change with success");
     set_password(old_password);
+    printf("password change with success");
     return 0;
 }
 

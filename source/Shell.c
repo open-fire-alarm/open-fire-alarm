@@ -35,5 +35,7 @@ int activate_alarms ()
 	printf("alarm 9 = ");
 	scanf("%d", &alarms.alarm9);
 
+    update_zones(); /* modifie les valeurs des zones automatiquement quand on change les valeurs des alarms */
+
 	return 0;
 }
