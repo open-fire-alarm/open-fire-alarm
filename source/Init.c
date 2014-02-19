@@ -7,6 +7,7 @@ int init_all()
     printf("initialization...\n\r");
 	init_alarms();
 	init_zone();
+	init_zone_active();
 	init_password();
 	return 0;
 }

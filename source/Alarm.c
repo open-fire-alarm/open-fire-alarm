@@ -20,6 +20,7 @@ struct Zones
 
 struct Alarms alarms;
 struct Zones zones;
+struct Zones zones_active;
 
 int init_alarms()
 {
@@ -40,6 +41,14 @@ int init_zone()
     zones.zone1 = 1;
     zones.zone2 = 1;
     zones.zone3 = 1;
+    return 0;
+}
+
+int init_zone_active()
+{
+    zones_active.zone1 = 0;
+    zones_active.zone2 = 0;
+    zones_active.zone3 = 0;
     return 0;
 }
 

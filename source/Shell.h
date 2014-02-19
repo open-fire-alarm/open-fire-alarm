@@ -1,1 +1,3 @@
-int set_utilisateur_alarms ();
+int activate_zones();
+
+int activate_alarms ();

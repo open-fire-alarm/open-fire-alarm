@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include "Alarm.h"
 
-int set_utilisateur_alarms ()
+int activate_zones()
+{
+    return 0;
+}
+
+int activate_alarms ()
 {
 	printf("alarm 1 = ");
 	scanf("%d", &alarms.alarm1);
