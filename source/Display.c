@@ -56,6 +56,8 @@ int display_alarms_in_zone(int zone)
 
 int display()
 {
+    printf("\n\r");
+
     if(zones.zone1 == 1)
     {
         printf("zone 1 safe\n\r");
