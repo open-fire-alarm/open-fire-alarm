@@ -3,6 +3,14 @@
 
 int activate_zones()
 {
+    printf("zone 1 active = ");
+	scanf("%d", &zones_active.zone1);
+
+    printf("zone 2 active = ");
+	scanf("%d", &zones_active.zone2);
+
+	printf("zone 3 active = ");
+	scanf("%d", &zones_active.zone3);
     return 0;
 }
 

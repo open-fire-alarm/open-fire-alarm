@@ -7,6 +7,9 @@
 int options_menu()
 {
     int commande_utilisateur;
+
+    printf("\n\r");
+
     printf("Welcome to the options menu\n\r");
     printf("Press 1 to change the password\n\r");
     printf("Press 2 to activate zones\n\r");
