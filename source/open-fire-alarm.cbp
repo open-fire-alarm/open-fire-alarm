@@ -59,6 +59,7 @@
 		<Unit filename="Mylog.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Mylog.h" />
 		<Unit filename="Options_menu.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "Alarm.h"
+#include "Mylog.h"
 
 int activate_zones()
 {
@@ -11,6 +12,9 @@ int activate_zones()
 
 	printf("zone 3 active = ");
 	scanf("%d", &zones_active.zone3);
+
+	update_mylog_zones_active();
+
     return 0;
 }
 
@@ -44,6 +48,9 @@ int activate_alarms ()
 	scanf("%d", &alarms.alarm9);
 
     update_zones(); /* modifie les valeurs des zones automatiquement quand on change les valeurs des alarms */
+
+    update_mylog_zones_on_fire();
+    update_mylog_alarms_on_fire();
 
 	return 0;
 }

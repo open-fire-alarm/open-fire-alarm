@@ -4,5 +4,5 @@ const struct tm* tmptr;
 
 char *return_time()
 {
-    return asctime(tmptr);
+    return "poney "; /*asctime(tmptr);*/
 }
