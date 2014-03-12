@@ -52,6 +52,13 @@
 		<Unit filename="Main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="MyTime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MyTime.h" />
+		<Unit filename="Mylog.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="Options_menu.c">
 			<Option compilerVar="CC" />
 		</Unit>

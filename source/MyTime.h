@@ -1,0 +1,1 @@
+char *return_time();
