@@ -98,36 +98,73 @@ int display_the_situation()
 
 int display_zone1_safe()
 {
+    printf("|                    |\n\r");
+    printf("|                    |\n\r");
+    printf("|                    |\n\r");
+    printf("|                    |\n\r");
+    printf("|____________________|\n\r");
+
     return 0;
 }
 
 int display_zone1_fire()
 {
+    printf("|                    |\n\r");
+    printf("|         )          |\n\r");
+    printf("|        ) |          |\n\r");
+    printf("|       / ) (        |\n\r");
+    printf("|_______\(_)/________|\n\r");
+
     return 0;
 }
 
 int display_zone2_safe()
 {
+    printf("|                    |\n\r");
+    printf("|                    |\n\r");
+    printf("|                    |\n\r");
+    printf("|                    |\n\r");
+    printf("|____________________|\n\r");
+
     return 0;
 }
 
 int display_zone2_fire()
 {
+    printf("|                    |\n\r");
+    printf("|         )          |\n\r");
+    printf("|        ) |         |\n\r");
+    printf("|       / ) (        |\n\r");
+    printf("|_______\(_)/________|\n\r");
+
     return 0;
 }
 
 int display_zone3_safe()
 {
+    printf("|                    |\n\r");
+    printf("|                    |\n\r");
+    printf("|                    |\n\r");
+    printf("|                    |\n\r");
+    printf("|____________________|\n\r");
+
     return 0;
 }
 
 int display_zone3_fire()
 {
+    printf("|                    |\n\r");
+    printf("|         )          |\n\r");
+    printf("|        ) |         |\n\r");
+    printf("|       / ) (        |\n\r");
+    printf("|_______\(_)/________|\n\r");
+
     return 0;
 }
 
-int display_the_map()
+int display_the_house()
 {
+    printf("______________________\n\r");
     if(zones_active.zone1)
     {
         if(zones.zone1)
@@ -177,7 +214,7 @@ int display()
 
     printf("\n\r");
 
-    display_the_map();
+    display_the_house();
 
     printf("\n\r");
 
