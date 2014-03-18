@@ -1,0 +1,23 @@
+digraph G
+{
+	Alarm;
+	Display;
+	Extraction;
+	Init;
+	Input;
+	Main;
+	Mylog;
+	MyTime;
+	Options_menu;
+	Output;
+	Password;
+	Shell;
+
+	Display -> Alarm;
+	Extraction -> Alarm;
+	Init -> {Alarm; Password; Mylog;}
+	Main -> {Init; Display; Options_menu;}
+	Mylog -> {MyTime; Alarm;}
+	Options_menu -> {Password; Shell; Display; Init; Mylog;}
+	Shell -> {Alarm; Mylog;}
+}
