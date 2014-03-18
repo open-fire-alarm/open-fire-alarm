@@ -31,36 +31,6 @@ int display_zones_active()
     return 0;
 }
 
-int display_zone1_safe()
-{
-    return 0;
-}
-
-int display_zone1_fire()
-{
-    return 0;
-}
-
-int display_zone2_safe()
-{
-    return 0;
-}
-
-int display_zone2_fire()
-{
-    return 0;
-}
-
-int display_zone3_safe()
-{
-    return 0;
-}
-
-int display_zone3_fire()
-{
-    return 0;
-}
-
 int display_alarms_in_zone(int zone)
 {
     if(zone==1)
@@ -84,14 +54,8 @@ int display_alarms_in_zone(int zone)
     return 0;
 }
 
-int display()
+int display_the_situation()
 {
-    printf("\n\r");
-
-    display_zones_active();
-
-    printf("\n\r");
-
     if(zones_active.zone1)
     {
         if(zones.zone1)
@@ -129,8 +93,41 @@ int display()
         }
     }
 
-    printf("\n\r");
+    return 0;
+}
 
+int display_zone1_safe()
+{
+    return 0;
+}
+
+int display_zone1_fire()
+{
+    return 0;
+}
+
+int display_zone2_safe()
+{
+    return 0;
+}
+
+int display_zone2_fire()
+{
+    return 0;
+}
+
+int display_zone3_safe()
+{
+    return 0;
+}
+
+int display_zone3_fire()
+{
+    return 0;
+}
+
+int display_the_map()
+{
     if(zones_active.zone1)
     {
         if(zones.zone1)
@@ -164,6 +161,23 @@ int display()
             display_zone3_fire();
         }
     }
+
+    return 0;
+}
+
+int display()
+{
+    printf("\n\r");
+
+    display_zones_active();
+
+    printf("\n\r");
+
+    display_the_situation();
+
+    printf("\n\r");
+
+    display_the_map();
 
     printf("\n\r");
 
