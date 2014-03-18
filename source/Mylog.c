@@ -20,7 +20,9 @@ int add_line_to_mylog(char *new_line)
     string_time[0]='\0';
     strcpy(string_time,return_time());
     strcpy(new_line_final,string_time);
+    strcat(new_line_final,"-> ");
     strcat(new_line_final,new_line);
+    strcat(new_line_final,"\n\r");
     strcat(new_line_final,"\n\r");
 
     strcat(mylog,new_line_final);
@@ -37,15 +39,15 @@ int update_mylog_zones_active()
     }
     if(!zones_active.zone1)
     {
-        strcat(new_line,"zone 1 inactive ");
+        strcat(new_line,"zone 1 inactive, ");
     }
     if(!zones_active.zone2)
     {
-        strcat(new_line,"zone 2 inactive ");
+        strcat(new_line,"zone 2 inactive, ");
     }
     if(!zones_active.zone3)
     {
-        strcat(new_line,"zone 3 inactive ");
+        strcat(new_line,"zone 3 inactive, ");
     }
     add_line_to_mylog(new_line);
 
@@ -62,15 +64,15 @@ int update_mylog_zones_on_fire()
     }
     if(!zones.zone1)
     {
-        strcat(new_line,"zone 1 on fire ");
+        strcat(new_line,"zone 1 on fire, ");
     }
     if(!zones.zone2)
     {
-        strcat(new_line,"zone 2 on fire ");
+        strcat(new_line,"zone 2 on fire, ");
     }
     if(!zones.zone3)
     {
-        strcat(new_line,"zone 3 on fire ");
+        strcat(new_line,"zone 3 on fire, ");
     }
     add_line_to_mylog(new_line);
 
@@ -86,39 +88,39 @@ int update_mylog_alarms_on_fire()
     }
     if(!alarms.alarm1)
     {
-        strcat(new_line,"alarm1 fire ");
+        strcat(new_line,"alarm1 fire, ");
     }
     if(!alarms.alarm2)
     {
-        strcat(new_line,"alarm2 fire ");
+        strcat(new_line,"alarm2 fire, ");
     }
     if(!alarms.alarm3)
     {
-        strcat(new_line,"alarm3 fire ");
+        strcat(new_line,"alarm3 fire, ");
     }
     if(!alarms.alarm4)
     {
-        strcat(new_line,"alarm4 fire ");
+        strcat(new_line,"alarm4 fire, ");
     }
     if(!alarms.alarm5)
     {
-        strcat(new_line,"alarm5 fire ");
+        strcat(new_line,"alarm5 fire, ");
     }
     if(!alarms.alarm6)
     {
-        strcat(new_line,"alarm6 fire ");
+        strcat(new_line,"alarm6 fire, ");
     }
     if(!alarms.alarm7)
     {
-        strcat(new_line,"alarm7 fire ");
+        strcat(new_line,"alarm7 fire, ");
     }
     if(!alarms.alarm8)
     {
-        strcat(new_line,"alarm8 fire ");
+        strcat(new_line,"alarm8 fire, ");
     }
     if(!alarms.alarm9)
     {
-        strcat(new_line,"alarm9 fire ");
+        strcat(new_line,"alarm9 fire, ");
     }
 
     add_line_to_mylog(new_line);

@@ -1,8 +1,9 @@
+#include <stdio.h>
 #include <time.h>
-
-const struct tm* tmptr;
 
 char *return_time()
 {
-    return "poney "; /*asctime(tmptr);*/
+    time_t t = time(NULL);
+
+    return asctime(localtime(&t));
 }
