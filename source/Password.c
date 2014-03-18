@@ -34,7 +34,21 @@ int change_password()
     printf("press the new password\n\r");
     scanf("%s",old_password);
     set_password(old_password);
-    printf("password change with success");
+    printf("password change with success\n\r");
     return 0;
 }
 
+int request_password()
+{
+    char old_password[20];
+    printf("request password...\n\r");
+    printf("press the password\n\r");
+    scanf("%s",old_password);
+    if(test_password(old_password)) /* old password bab */
+    {
+        printf("bad password\n\r");
+        return 1;
+    }
+    printf("good password\n\r");
+    return 0;
+}
