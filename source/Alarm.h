@@ -5,7 +5,6 @@ struct Zones
 	int zone3;
 };
 
-struct Zones zones;
 struct Zones zones_active;
 
 int init_alarms();
@@ -32,3 +31,7 @@ int get_alarm8();
 int set_alarm8(int new_alarm8);
 int get_alarm9();
 int set_alarm9(int new_alarm9);
+
+int get_zone1();
+int get_zone2();
+int get_zone3();

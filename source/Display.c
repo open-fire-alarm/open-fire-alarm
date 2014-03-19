@@ -58,7 +58,7 @@ int display_the_situation()
 {
     if(zones_active.zone1)
     {
-        if(zones.zone1)
+        if(get_zone1())
         {
             printf("zone 1 safe\n\r");
         }
@@ -70,7 +70,7 @@ int display_the_situation()
     }
     if(zones_active.zone2)
     {
-        if(zones.zone2)
+        if(get_zone2())
         {
             printf("zone 2 safe\n\r");
         }
@@ -82,7 +82,7 @@ int display_the_situation()
     }
     if(zones_active.zone3)
     {
-        if(zones.zone3)
+        if(get_zone3())
         {
             printf("zone 3 safe\n\r");
         }
@@ -167,7 +167,7 @@ int display_the_house()
     printf("______________________\n\r");
     if(zones_active.zone1)
     {
-        if(zones.zone1)
+        if(get_zone1())
         {
             display_zone1_safe();
         }
@@ -178,7 +178,7 @@ int display_the_house()
     }
     if(zones_active.zone2)
     {
-        if(zones.zone2)
+        if(get_zone2())
         {
             display_zone2_safe();
         }
@@ -189,7 +189,7 @@ int display_the_house()
     }
     if(zones_active.zone3)
     {
-        if(zones.zone3)
+        if(get_zone3())
         {
             display_zone3_safe();
         }

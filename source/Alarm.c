@@ -179,3 +179,18 @@ int set_alarm9(int new_alarm9)
     alarms.alarm9=new_alarm9;
     return 0;
 }
+
+int get_zone1()
+{
+    return zones.zone1;
+}
+
+int get_zone2()
+{
+    return zones.zone2;
+}
+
+int get_zone3()
+{
+    return zones.zone3;
+}

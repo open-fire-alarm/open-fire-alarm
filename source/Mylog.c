@@ -58,19 +58,19 @@ int update_mylog_zones_on_fire()
 {
     char new_line[200];
     new_line[0]='\0';
-    if(zones.zone1 && zones.zone2 && zones.zone3)
+    if(get_zone1() && get_zone2() && get_zone3())
     {
         strcpy(new_line,"every zones are safe");
     }
-    if(!zones.zone1)
+    if(!get_zone1())
     {
         strcat(new_line,"zone 1 on fire, ");
     }
-    if(!zones.zone2)
+    if(!get_zone2())
     {
         strcat(new_line,"zone 2 on fire, ");
     }
-    if(!zones.zone3)
+    if(!get_zone3())
     {
         strcat(new_line,"zone 3 on fire, ");
     }
