@@ -3,7 +3,7 @@
 
 int display_zones_active()
 {
-    if(zones_active.zone1)
+    if(get_zones_active1())
     {
         printf("zones 1 active\n\r");
     }
@@ -11,7 +11,7 @@ int display_zones_active()
     {
         printf("zones 1 desactive\n\r");
     }
-    if(zones_active.zone2)
+    if(get_zones_active2())
     {
         printf("zones 2 active\n\r");
     }
@@ -19,7 +19,7 @@ int display_zones_active()
     {
         printf("zones 2 desactive\n\r");
     }
-    if(zones_active.zone3)
+    if(get_zones_active3())
     {
         printf("zones 3 active\n\r");
     }
@@ -56,7 +56,7 @@ int display_alarms_in_zone(int zone)
 
 int display_the_situation()
 {
-    if(zones_active.zone1)
+    if(get_zones_active1())
     {
         if(get_zone1())
         {
@@ -68,7 +68,7 @@ int display_the_situation()
             display_alarms_in_zone(1);
         }
     }
-    if(zones_active.zone2)
+    if(get_zones_active2())
     {
         if(get_zone2())
         {
@@ -80,7 +80,7 @@ int display_the_situation()
             display_alarms_in_zone(2);
         }
     }
-    if(zones_active.zone3)
+    if(get_zones_active3())
     {
         if(get_zone3())
         {
@@ -165,7 +165,7 @@ int display_zone3_fire()
 int display_the_house()
 {
     printf("______________________\n\r");
-    if(zones_active.zone1)
+    if(get_zones_active1())
     {
         if(get_zone1())
         {
@@ -176,7 +176,7 @@ int display_the_house()
             display_zone1_fire();
         }
     }
-    if(zones_active.zone2)
+    if(get_zones_active2())
     {
         if(get_zone2())
         {
@@ -187,7 +187,7 @@ int display_the_house()
             display_zone2_fire();
         }
     }
-    if(zones_active.zone3)
+    if(get_zones_active3())
     {
         if(get_zone3())
         {

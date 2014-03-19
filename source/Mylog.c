@@ -33,19 +33,19 @@ int update_mylog_zones_active()
 {
     char new_line[200];
     new_line[0]='\0';
-    if(zones_active.zone1 && zones_active.zone2 && zones_active.zone3)
+    if(get_zones_active1() && get_zones_active2() && get_zones_active3())
     {
         strcpy(new_line,"every zones are active");
     }
-    if(!zones_active.zone1)
+    if(!get_zones_active1())
     {
         strcat(new_line,"zone 1 inactive, ");
     }
-    if(!zones_active.zone2)
+    if(!get_zones_active2())
     {
         strcat(new_line,"zone 2 inactive, ");
     }
-    if(!zones_active.zone3)
+    if(!get_zones_active3())
     {
         strcat(new_line,"zone 3 inactive, ");
     }

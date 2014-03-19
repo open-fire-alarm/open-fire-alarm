@@ -4,14 +4,19 @@
 
 int activate_zones()
 {
+    int commande_utilisateur;
+
     printf("zone 1 active = ");
-	scanf("%d", &zones_active.zone1);
+	scanf("%d", &commande_utilisateur);
+	set_zones_active1(commande_utilisateur);
 
     printf("zone 2 active = ");
-	scanf("%d", &zones_active.zone2);
+	scanf("%d", &commande_utilisateur);
+	set_zones_active2(commande_utilisateur);
 
 	printf("zone 3 active = ");
-	scanf("%d", &zones_active.zone3);
+	scanf("%d", &commande_utilisateur);
+	set_zones_active3(commande_utilisateur);
 
 	update_mylog_zones_active();
 
