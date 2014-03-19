@@ -15,8 +15,8 @@ int init_mylog()
 int add_line_to_mylog(char *new_line)
 {
     char new_line_final[500];
-    new_line_final[0]='\0';
     char string_time[100];
+    new_line_final[0]='\0';
     string_time[0]='\0';
     strcpy(string_time,return_time());
     strcpy(new_line_final,string_time);
