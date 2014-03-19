@@ -35,21 +35,21 @@ int display_alarms_in_zone(int zone)
 {
     if(zone==1)
     {
-        printf("    alarm 1 = %d\n\r",alarms.alarm1);
-        printf("    alarm 2 = %d\n\r",alarms.alarm2);
-        printf("    alarm 3 = %d\n\r",alarms.alarm3);
+        printf("    alarm 1 = %d\n\r",get_alarm1());
+        printf("    alarm 2 = %d\n\r",get_alarm2());
+        printf("    alarm 3 = %d\n\r",get_alarm3());
     }
     if(zone==2)
     {
-        printf("    alarm 4 = %d\n\r",alarms.alarm4);
-        printf("    alarm 5 = %d\n\r",alarms.alarm5);
-        printf("    alarm 6 = %d\n\r",alarms.alarm6);
+        printf("    alarm 4 = %d\n\r",get_alarm4());
+        printf("    alarm 5 = %d\n\r",get_alarm5());
+        printf("    alarm 6 = %d\n\r",get_alarm6());
     }
     if(zone==3)
     {
-        printf("    alarm 7 = %d\n\r",alarms.alarm7);
-        printf("    alarm 8 = %d\n\r",alarms.alarm8);
-        printf("    alarm 9 = %d\n\r",alarms.alarm9);
+        printf("    alarm 7 = %d\n\r",get_alarm7());
+        printf("    alarm 8 = %d\n\r",get_alarm8());
+        printf("    alarm 9 = %d\n\r",get_alarm9());
     }
     return 0;
 }

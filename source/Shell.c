@@ -20,32 +20,43 @@ int activate_zones()
 
 int activate_alarms ()
 {
-	printf("alarm 1 = ");
-	scanf("%d", &alarms.alarm1);
+    int commande_utilisateur;
 
-    printf("alarm 2 = ");
-	scanf("%d", &alarms.alarm2);
+	printf("alarm 1 = ");
+	scanf("%d", &commande_utilisateur);
+	set_alarm1(commande_utilisateur);
+
+	printf("alarm 2 = ");
+	scanf("%d", &commande_utilisateur);
+	set_alarm2(commande_utilisateur);
 
 	printf("alarm 3 = ");
-	scanf("%d", &alarms.alarm3);
+	scanf("%d", &commande_utilisateur);
+	set_alarm3(commande_utilisateur);
 
 	printf("alarm 4 = ");
-	scanf("%d", &alarms.alarm4);
+	scanf("%d", &commande_utilisateur);
+	set_alarm4(commande_utilisateur);
 
 	printf("alarm 5 = ");
-	scanf("%d", &alarms.alarm5);
+	scanf("%d", &commande_utilisateur);
+	set_alarm5(commande_utilisateur);
 
 	printf("alarm 6 = ");
-	scanf("%d", &alarms.alarm6);
+	scanf("%d", &commande_utilisateur);
+	set_alarm6(commande_utilisateur);
 
 	printf("alarm 7 = ");
-	scanf("%d", &alarms.alarm7);
+	scanf("%d", &commande_utilisateur);
+	set_alarm7(commande_utilisateur);
 
 	printf("alarm 8 = ");
-	scanf("%d", &alarms.alarm8);
+	scanf("%d", &commande_utilisateur);
+	set_alarm8(commande_utilisateur);
 
 	printf("alarm 9 = ");
-	scanf("%d", &alarms.alarm9);
+	scanf("%d", &commande_utilisateur);
+	set_alarm9(commande_utilisateur);
 
     update_zones(); /* modifie les valeurs des zones automatiquement quand on change les valeurs des alarms */
 

@@ -82,43 +82,43 @@ int update_mylog_alarms_on_fire()
 {
     char new_line[200];
     new_line[0]='\0';
-    if(alarms.alarm1 && alarms.alarm2 && alarms.alarm3 && alarms.alarm4 && alarms.alarm5 && alarms.alarm6 && alarms.alarm7 && alarms.alarm8 && alarms.alarm9)
+    if(get_alarm1() && get_alarm2() && get_alarm3() && get_alarm4() && get_alarm5() && get_alarm6() && get_alarm7() && get_alarm8() && get_alarm9())
     {
         strcpy(new_line,"no fire");
     }
-    if(!alarms.alarm1)
+    if(!get_alarm1())
     {
         strcat(new_line,"alarm1 fire, ");
     }
-    if(!alarms.alarm2)
+    if(!get_alarm2())
     {
         strcat(new_line,"alarm2 fire, ");
     }
-    if(!alarms.alarm3)
+    if(!get_alarm3())
     {
         strcat(new_line,"alarm3 fire, ");
     }
-    if(!alarms.alarm4)
+    if(!get_alarm4())
     {
         strcat(new_line,"alarm4 fire, ");
     }
-    if(!alarms.alarm5)
+    if(!get_alarm5())
     {
         strcat(new_line,"alarm5 fire, ");
     }
-    if(!alarms.alarm6)
+    if(!get_alarm6())
     {
         strcat(new_line,"alarm6 fire, ");
     }
-    if(!alarms.alarm7)
+    if(!get_alarm7())
     {
         strcat(new_line,"alarm7 fire, ");
     }
-    if(!alarms.alarm8)
+    if(!get_alarm8())
     {
         strcat(new_line,"alarm8 fire, ");
     }
-    if(!alarms.alarm9)
+    if(!get_alarm9())
     {
         strcat(new_line,"alarm9 fire, ");
     }

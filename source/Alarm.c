@@ -80,3 +80,102 @@ int update_zones()
 	}
 	return 0;
 }
+
+int get_alarm1()
+{
+    return alarms.alarm1;
+}
+
+int set_alarm1(int new_alarm1)
+{
+    alarms.alarm1=new_alarm1;
+    return 0;
+}
+
+int get_alarm2()
+{
+    return alarms.alarm2;
+}
+
+int set_alarm2(int new_alarm2)
+{
+    alarms.alarm2=new_alarm2;
+    return 0;
+}
+
+int get_alarm3()
+{
+    return alarms.alarm3;
+}
+
+int set_alarm3(int new_alarm3)
+{
+    alarms.alarm3=new_alarm3;
+    return 0;
+}
+
+int get_alarm4()
+{
+    return alarms.alarm4;
+}
+
+int set_alarm4(int new_alarm4)
+{
+    alarms.alarm4=new_alarm4;
+    return 0;
+}
+
+int get_alarm5()
+{
+    return alarms.alarm5;
+}
+
+int set_alarm5(int new_alarm5)
+{
+    alarms.alarm5=new_alarm5;
+    return 0;
+}
+
+int get_alarm6()
+{
+    return alarms.alarm6;
+}
+
+int set_alarm6(int new_alarm6)
+{
+    alarms.alarm6=new_alarm6;
+    return 0;
+}
+
+int get_alarm7()
+{
+    return alarms.alarm7;
+}
+
+int set_alarm7(int new_alarm7)
+{
+    alarms.alarm7=new_alarm7;
+    return 0;
+}
+
+int get_alarm8()
+{
+    return alarms.alarm8;
+}
+
+int set_alarm8(int new_alarm8)
+{
+    alarms.alarm8=new_alarm8;
+    return 0;
+}
+
+int get_alarm9()
+{
+    return alarms.alarm9;
+}
+
+int set_alarm9(int new_alarm9)
+{
+    alarms.alarm9=new_alarm9;
+    return 0;
+}
