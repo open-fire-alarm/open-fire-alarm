@@ -23,6 +23,7 @@ int test_password(char *try_password)
 int change_password()
 {
     char old_password[200];
+    char new_password[200];
     printf("change password...\n\r");
     printf("press the old password\n\r");
     scanf("%s",old_password);
@@ -32,7 +33,14 @@ int change_password()
         return 1;
     }
     printf("press the new password\n\r");
+    scanf("%s",new_password);
+    printf("press again the new password\n\r");
     scanf("%s",old_password);
+    if(strcmp(new_password,old_password)) /* strcmp return 0 if strins are the same */
+    {
+        printf("it is not the same password\n\r");
+        return 1;
+    }
     set_password(old_password);
     printf("password change with success\n\r");
     return 0;
