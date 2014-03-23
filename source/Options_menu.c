@@ -3,7 +3,8 @@
 #include "Shell.h"
 #include "Display.h"
 #include "Init.h"
-#include"Mylog.h"
+#include "Mylog.h"
+#include "Help.h"
 
 int options_menu()
 {
@@ -19,6 +20,7 @@ int options_menu()
     printf("Press 5 to launch the alarm system\n\r");
     printf("Press 6 to print the log\n\r");
     printf("Press 7 to reset all\n\r");
+    printf("Press 8 to have help\n\r");
     scanf("%d",&commande_utilisateur);
 
     if(commande_utilisateur == 1)
@@ -59,6 +61,12 @@ int options_menu()
     {
         /* reset */
         init_all();
+        return 0;
+    }
+    if(commande_utilisateur == 8)
+    {
+        /* help */
+        print_help();
         return 0;
     }
 
