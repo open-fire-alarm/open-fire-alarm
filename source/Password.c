@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-char password[20];
+char password[200];
 
 int init_password()
 {

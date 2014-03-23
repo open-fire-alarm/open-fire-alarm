@@ -3,7 +3,7 @@
 #include "MyTime.h"
 #include "Alarm.h"
 
-char mylog[1000];
+char mylog[4000];
 
 int init_mylog()
 {
@@ -14,8 +14,8 @@ int init_mylog()
 
 int add_line_to_mylog(char *new_line)
 {
-    char new_line_final[500];
-    char string_time[100];
+    char new_line_final[1000];
+    char string_time[1000];
     new_line_final[0]='\0';
     string_time[0]='\0';
     strcpy(string_time,return_time());
@@ -31,7 +31,7 @@ int add_line_to_mylog(char *new_line)
 
 int update_mylog_zones_active()
 {
-    char new_line[200];
+    char new_line[1000];
     new_line[0]='\0';
     if(get_zones_active1() && get_zones_active2() && get_zones_active3())
     {
@@ -56,7 +56,7 @@ int update_mylog_zones_active()
 
 int update_mylog_zones_on_fire()
 {
-    char new_line[200];
+    char new_line[1000];
     new_line[0]='\0';
     if(get_zone1() && get_zone2() && get_zone3())
     {
@@ -80,7 +80,7 @@ int update_mylog_zones_on_fire()
 }
 int update_mylog_alarms_on_fire()
 {
-    char new_line[200];
+    char new_line[1000];
     new_line[0]='\0';
     if(get_alarm1() && get_alarm2() && get_alarm3() && get_alarm4() && get_alarm5() && get_alarm6() && get_alarm7() && get_alarm8() && get_alarm9())
     {
