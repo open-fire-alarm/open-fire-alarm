@@ -22,7 +22,7 @@ int test_password(char *try_password)
 
 int change_password()
 {
-    char old_password[20];
+    char old_password[200];
     printf("change password...\n\r");
     printf("press the old password\n\r");
     scanf("%s",old_password);
@@ -40,7 +40,7 @@ int change_password()
 
 int request_password()
 {
-    char old_password[20];
+    char old_password[200];
     printf("request password...\n\r");
     printf("press the password\n\r");
     scanf("%s",old_password);
