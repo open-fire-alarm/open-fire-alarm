@@ -5,7 +5,7 @@
 
 int init_all()
 {
-    printf("initialization...");
+    printf("initialization...\n\r");
 	init_alarms();
 	init_zone();
 	init_zone_active();

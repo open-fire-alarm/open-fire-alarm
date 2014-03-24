@@ -5,7 +5,11 @@ char password[200];
 
 int init_password()
 {
-	strcpy(password,"00000");
+    char new_password[200];
+    new_password[0]='\0';
+    printf("press the password what you want\n\r");
+    scanf("%s",new_password);
+	strcpy(password,new_password);
 	return 0;
 }
 
