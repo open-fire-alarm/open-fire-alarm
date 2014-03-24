@@ -3,6 +3,7 @@ digraph G
 	Alarm;
 	Display;
 	Extraction;
+	Help;
 	Init;
 	Input;
 	Main;
@@ -18,6 +19,6 @@ digraph G
 	Init -> {Alarm; Password; Mylog;}
 	Main -> {Init; Display; Options_menu;}
 	Mylog -> {MyTime; Alarm;}
-	Options_menu -> {Password; Shell; Display; Init; Mylog;}
+	Options_menu -> {Password; Shell; Display; Init; Mylog; Help;}
 	Shell -> {Alarm; Mylog;}
 }
