@@ -4,6 +4,12 @@
 
 int stop_automatic_loop = 0;
 
+int set_stop_automatic_loop(int new_stop_automatic_loop)
+{
+    stop_automatic_loop = new_stop_automatic_loop;
+    return 0;
+}
+
 int return_to_the_menu()
 {
     int commande_utilisateur;

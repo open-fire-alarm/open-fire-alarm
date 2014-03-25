@@ -1,4 +1,5 @@
 #include "Alarm.h"
+#include "Automatic_loop.h"
 
 int extraction_port_a(unsigned char interupteurs)
 {
@@ -41,5 +42,9 @@ int extraction_port_e(unsigned char interupteurs)
     unsigned char tmp = interupteurs;
     tmp = tmp & 0x01;
 	set_alarm9(tmp);
+    tmp = interupteurs;
+	tmp = tmp & 0x02;
+	tmp = tmp >> 1;
+	set_stop_automatic_loop(tmp);
     return 0;
 }
