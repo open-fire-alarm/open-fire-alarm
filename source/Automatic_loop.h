@@ -1,0 +1,1 @@
+int automatic_loop();

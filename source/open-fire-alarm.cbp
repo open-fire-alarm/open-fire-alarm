@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Alarm.h" />
+		<Unit filename="Automatic_loop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Automatic_loop.h" />
 		<Unit filename="Display.c">
 			<Option compilerVar="CC" />
 		</Unit>

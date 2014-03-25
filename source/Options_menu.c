@@ -2,6 +2,7 @@
 #include "Password.h"
 #include "Shell.h"
 #include "Display.h"
+#include "Automatic_loop.h"
 #include "Init.h"
 #include "Mylog.h"
 #include "Help.h"
@@ -50,6 +51,7 @@ int options_menu()
     if(commande_utilisateur == 5)
     {
         /* launch the alarm system */
+        automatic_loop();
         return 0;
     }
     if(commande_utilisateur == 6)
