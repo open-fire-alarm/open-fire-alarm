@@ -4,13 +4,13 @@
 
 int main()
 {
-    int stop = 0;
+    int stop_main = 0;
 
     init_all();
 
     display();
 
-    while(!stop)
+    while(!stop_main)
     {
         options_menu();
     }
