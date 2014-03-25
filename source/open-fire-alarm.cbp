@@ -46,6 +46,7 @@
 		<Unit filename="Extraction.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Extraction.h" />
 		<Unit filename="Help.c">
 			<Option compilerVar="CC" />
 		</Unit>

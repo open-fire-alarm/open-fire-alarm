@@ -1,6 +1,6 @@
 #include "Alarm.h"
 
-int extraction(unsigned char interupteurs)
+int extraction_port_a(unsigned char interupteurs)
 {
 	unsigned char tmp = interupteurs;
     tmp = tmp & 0x01;
@@ -33,9 +33,13 @@ int extraction(unsigned char interupteurs)
 	tmp = tmp & 0x80;
 	tmp = tmp >> 7;
 	set_alarm8(tmp);
-    tmp = interupteurs;
-	tmp = tmp & 0x01;
-	tmp = tmp >> 8;
-	set_alarm9(tmp);
 	return 0;
+}
+
+int extraction_port_e(unsigned char interupteurs)
+{
+    unsigned char tmp = interupteurs;
+    tmp = tmp & 0x01;
+	set_alarm9(tmp);
+    return 0;
 }
