@@ -16,7 +16,7 @@ int options_menu()
     printf("Welcome to the options menu\n\r");
     printf("Press 1 to change the password\n\r");
     printf("Press 2 to activate zones\n\r");
-    printf("Press 3 to activate alarms\n\r");
+    printf("Press 3 to set alarms\n\r");
     printf("Press 4 to display\n\r");
     printf("Press 5 to launch the alarm system\n\r");
     printf("Press 6 to print the log\n\r");
@@ -38,8 +38,8 @@ int options_menu()
     }
     if(commande_utilisateur == 3)
     {
-        /* activate alarms */
-        activate_alarms();
+        /* set alarms */
+        set_alarms();
         return 0;
     }
     if(commande_utilisateur == 4)

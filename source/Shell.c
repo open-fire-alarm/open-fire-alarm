@@ -32,7 +32,7 @@ int activate_zones()
     return 0;
 }
 
-int activate_alarms ()
+int set_alarms ()
 {
     int commande_utilisateur;
 

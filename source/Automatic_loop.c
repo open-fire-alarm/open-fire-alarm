@@ -21,7 +21,7 @@ int automatic_loop()
     while(!stop_automatic_loop)
     {
         activate_zones();
-        activate_alarms();
+        set_alarms();
         display();
         return_to_the_menu();
     }

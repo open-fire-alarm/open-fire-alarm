@@ -1,3 +1,3 @@
 int activate_zones();
 
-int activate_alarms ();
+int set_alarms ();
