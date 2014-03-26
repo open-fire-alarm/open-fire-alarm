@@ -35,6 +35,8 @@ int automatic_loop()
         return_to_the_menu();
     }
 
+    stop_automatic_loop = 0;
+
 	return 0;
 }
 

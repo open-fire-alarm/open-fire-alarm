@@ -3,7 +3,7 @@
 #include "MyTime.h"
 #include "Alarm.h"
 
-char mylog[4000];
+char mylog[2000];
 
 int init_mylog()
 {
