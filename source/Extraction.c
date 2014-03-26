@@ -46,5 +46,17 @@ int extraction_port_e(unsigned char interupteurs)
 	tmp = tmp & 0x02;
 	tmp = tmp >> 1;
 	set_stop_automatic_loop(tmp);
+	tmp = interupteurs;
+	tmp = tmp & 0x04;
+	tmp = tmp >> 2;
+	set_zones_active1(tmp);
+    tmp = interupteurs;
+	tmp = tmp & 0x08;
+	tmp = tmp >> 3;
+	set_zones_active2(tmp);
+    tmp = interupteurs;
+	tmp = tmp & 0x10;
+	tmp = tmp >> 4;
+	set_zones_active3(tmp);
     return 0;
 }
