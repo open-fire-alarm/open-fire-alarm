@@ -30,7 +30,9 @@ int automatic_loop()
 {
     while(!stop_automatic_loop)
     {
+        /* if you want activate zones in this mod
         activate_zones();
+        */
         set_alarms();
         display();
         return_to_the_menu();
