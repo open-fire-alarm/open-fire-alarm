@@ -2,6 +2,8 @@
 #include"Shell.h"
 #include"Display.h"
 #include"Input.h"
+#include"Alarm.h"
+#include"Output.h"
 
 int stop_automatic_loop = 0;
 
@@ -42,6 +44,8 @@ int automatic_loop_microprocessor()
     {
         port_a();
         port_e();
+        update_zones();
+        port_g();
         display();
     }
 
