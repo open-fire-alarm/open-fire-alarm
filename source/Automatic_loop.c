@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include"Shell.h"
 #include"Display.h"
+#include"Input.h"
 
 int stop_automatic_loop = 0;
 
@@ -30,6 +31,18 @@ int automatic_loop()
         set_alarms();
         display();
         return_to_the_menu();
+    }
+
+	return 0;
+}
+
+int automatic_loop_microprocessor()
+{
+    while(!stop_automatic_loop)
+    {
+        port_a();
+        port_e();
+        display();
     }
 
 	return 0;
