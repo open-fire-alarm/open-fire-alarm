@@ -15,7 +15,7 @@ digraph G
 	Password;
 	Shell;
 
-	Automatic_loop -> {Shell; Display; Input;}
+	Automatic_loop -> {Shell; Display; Input; Alarm; Output;}
 	Display -> Alarm;
 	Extraction -> {Alarm; Automatic_loop;}
 	Init -> {Alarm; Password; Mylog;}
