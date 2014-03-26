@@ -33,3 +33,5 @@ int get_zones_active2();
 int set_zones_active2(int new_zones_active2);
 int get_zones_active3();
 int set_zones_active3(int new_zones_active3);
+
+int everything_is_safe();

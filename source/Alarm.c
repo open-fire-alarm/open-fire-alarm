@@ -227,3 +227,30 @@ int set_zones_active3(int new_zones_active3)
     zones_active.zone3=new_zones_active3;
     return 0;
 }
+
+int everything_is_safe()
+{
+    int safe = 1;
+    if(zones_active.zone1)
+    {
+        if(!(alarms.alarm1 && alarms.alarm2 && alarms.alarm3))
+        {
+            safe = 0;
+        }
+    }
+    if(zones_active.zone2)
+    {
+        if(!(alarms.alarm4 && alarms.alarm5 && alarms.alarm6))
+        {
+            safe = 0;
+        }
+    }
+    if(zones_active.zone3)
+    {
+        if(!(alarms.alarm7 && alarms.alarm8 && alarms.alarm9))
+        {
+            safe = 0;
+        }
+    }
+    return safe;
+}
