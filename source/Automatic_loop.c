@@ -51,5 +51,7 @@ int automatic_loop_microprocessor()
         display();
     }
 
+    stop_automatic_loop = 0;
+
 	return 0;
 }
