@@ -7,3 +7,8 @@ char *return_time()
 
     return asctime(localtime(&t));
 }
+
+char *return_time_microprocessor()
+{
+    return "Time";
+}
