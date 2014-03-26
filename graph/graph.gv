@@ -1,6 +1,7 @@
 digraph G
 {
 	Alarm;
+	Automatic_loop;
 	Display;
 	Extraction;
 	Help;
@@ -14,11 +15,13 @@ digraph G
 	Password;
 	Shell;
 
+	Automatic_loop -> {Shell; Display; Input;}
 	Display -> Alarm;
-	Extraction -> Alarm;
+	Extraction -> {Alarm; Automatic_loop;}
 	Init -> {Alarm; Password; Mylog;}
+	Input -> Extraction
 	Main -> {Init; Display; Options_menu;}
 	Mylog -> {MyTime; Alarm;}
-	Options_menu -> {Password; Shell; Display; Init; Mylog; Help;}
+	Options_menu -> {Password; Shell; Display; Automatic_loop; Init; Mylog; Help;}
 	Shell -> {Alarm; Mylog;}
 }
