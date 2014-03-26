@@ -14,8 +14,9 @@ digraph G
 	Output;
 	Password;
 	Shell;
+	Sleep;
 
-	Automatic_loop -> {Shell; Display; Input; Alarm; Output;}
+	Automatic_loop -> {Shell; Display; Input; Alarm; Output; Sleep;}
 	Display -> Alarm;
 	Extraction -> {Alarm; Automatic_loop;}
 	Init -> {Alarm; Password; Mylog;}
@@ -23,5 +24,6 @@ digraph G
 	Main -> {Init; Display; Options_menu;}
 	Mylog -> {MyTime; Alarm;}
 	Options_menu -> {Password; Shell; Display; Automatic_loop; Init; Mylog; Help;}
+	Output -> Alarm;
 	Shell -> {Alarm; Mylog;}
 }
