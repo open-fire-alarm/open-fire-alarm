@@ -86,6 +86,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Shell.h" />
+		<Unit filename="Sleep.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Sleep.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
