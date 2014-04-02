@@ -8,7 +8,8 @@ char *return_time()
     return asctime(localtime(&t));
 }
 
-char *return_time_microprocessor()
+int return_time_microprocessor(char *string_time)
 {
-    return "Time";
+    sprintf(string_time,"Time");
+    return 0;
 }
