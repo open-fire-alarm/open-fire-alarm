@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <time.h>
 
-char *return_time()
+int return_time(char *string_time)
 {
     time_t t = time(NULL);
 
-    return asctime(localtime(&t));
+    sprintf(string_time,asctime(localtime(&t)));
+
+    return 0;
 }
 
 int return_time_microprocessor(char *string_time)
