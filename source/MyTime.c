@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 #include <time.h>
 
 int return_time(char *string_time)
 {
     time_t t = time(NULL);
 
-    sprintf(string_time,asctime(localtime(&t)));
+    strcpy(string_time,asctime(localtime(&t)));
 
     return 0;
 }
