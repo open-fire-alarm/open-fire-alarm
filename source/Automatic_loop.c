@@ -7,14 +7,6 @@
 #include"Sleep.h"
 #include"Mygetchar.h"
 
-int stop_automatic_loop = 0;
-
-int set_stop_automatic_loop(int new_stop_automatic_loop)
-{
-    stop_automatic_loop = new_stop_automatic_loop;
-    return 0;
-}
-
 int do_you_want_return_to_the_menu()
 {
     int commande_utilisateur;
@@ -22,13 +14,13 @@ int do_you_want_return_to_the_menu()
     printf("do you want return to the menu?(yes = 1 / no = 0)\n\r");
     scanf("%d",&commande_utilisateur);
 
-    stop_automatic_loop = commande_utilisateur; /* 1 stop the loop and 0 don t stop the loop */
-
-    return 0;
+    return commande_utilisateur; /* 1 stop the loop and 0 don t stop the loop */
 }
 
 int automatic_loop()
 {
+    int stop_automatic_loop = 0;
+
     while(!stop_automatic_loop)
     {
         /* if you want activate zones in this mod
@@ -36,17 +28,17 @@ int automatic_loop()
         */
         set_alarms();
         display();
-        do_you_want_return_to_the_menu();
+        stop_automatic_loop = do_you_want_return_to_the_menu(); /* 1 stop the loop and 0 don t stop the loop */
     }
-
-    stop_automatic_loop = 0;
 
 	return 0;
 }
 
 int automatic_loop_microprocessor()
 {
+    int stop_automatic_loop = 0;
     unsigned char key;
+
     while(!stop_automatic_loop)
     {
         port_a();
@@ -61,8 +53,6 @@ int automatic_loop_microprocessor()
             stop_automatic_loop = 1;
         }
     }
-
-    stop_automatic_loop = 0;
 
 	return 0;
 }
