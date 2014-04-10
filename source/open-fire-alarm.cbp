@@ -66,6 +66,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="MyTime.h" />
+		<Unit filename="Mygetchar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Mygetchar.h" />
 		<Unit filename="Mylog.c">
 			<Option compilerVar="CC" />
 		</Unit>

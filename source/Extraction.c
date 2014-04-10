@@ -42,10 +42,13 @@ int extraction_port_e(unsigned char interupteurs)
     unsigned char tmp = interupteurs;
     tmp = tmp & 0x01;
 	set_alarm9(tmp);
+/* if you want stop automatic_loop_microprocessor() with E2 take this code
     tmp = interupteurs;
 	tmp = tmp & 0x02;
 	tmp = tmp >> 1;
 	set_stop_automatic_loop(tmp);
+*/
+
 /* if you want change the zones active with switch E3 E4 E5 take this code
 	tmp = interupteurs;
 	tmp = tmp & 0x04;

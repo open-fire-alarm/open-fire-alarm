@@ -5,6 +5,7 @@
 #include"Alarm.h"
 #include"Output.h"
 #include"Sleep.h"
+#include"Mygetchar.h"
 
 int stop_automatic_loop = 0;
 
@@ -45,6 +46,7 @@ int automatic_loop()
 
 int automatic_loop_microprocessor()
 {
+    unsigned char key;
     while(!stop_automatic_loop)
     {
         port_a();
@@ -53,6 +55,11 @@ int automatic_loop_microprocessor()
         port_g();
         display();
         sleep(1000);
+        key = mygetchar();
+        if(key != '\0')
+        {
+            stop_automatic_loop = 1;
+        }
     }
 
     stop_automatic_loop = 0;
