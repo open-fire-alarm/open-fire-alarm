@@ -1,5 +1,4 @@
 #include "Alarm.h"
-#include "Automatic_loop.h"
 
 int extraction_port_a(unsigned char interupteurs)
 {
