@@ -15,7 +15,7 @@ int set_stop_automatic_loop(int new_stop_automatic_loop)
     return 0;
 }
 
-int return_to_the_menu()
+int do_you_want_return_to_the_menu()
 {
     int commande_utilisateur;
 
@@ -36,7 +36,7 @@ int automatic_loop()
         */
         set_alarms();
         display();
-        return_to_the_menu();
+        do_you_want_return_to_the_menu();
     }
 
     stop_automatic_loop = 0;
