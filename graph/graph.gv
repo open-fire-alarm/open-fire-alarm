@@ -8,6 +8,7 @@ digraph G
 	Init;
 	Input;
 	Main;
+	Mygetchar;
 	Mylog;
 	MyTime;
 	Options_menu;
@@ -16,9 +17,9 @@ digraph G
 	Shell;
 	Sleep;
 
-	Automatic_loop -> {Shell; Display; Input; Alarm; Output; Sleep;}
+	Automatic_loop -> {Shell; Display; Input; Alarm; Output; Sleep; Mygetchar;}
 	Display -> Alarm;
-	Extraction -> {Alarm; Automatic_loop;}
+	Extraction -> Alarm;
 	Init -> {Alarm; Password; Mylog;}
 	Input -> Extraction
 	Main -> {Init; Display; Options_menu;}
