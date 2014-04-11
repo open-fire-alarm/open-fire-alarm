@@ -1,3 +1,5 @@
+/* Mylog.h */
+
 int init_mylog();
 
 int update_mylog_zones_active();
