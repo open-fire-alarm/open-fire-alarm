@@ -12,7 +12,7 @@ int port_a()
     *ddra=0x00;
     /*Set DDRA to all inputs*/
 
-    extraction_port_a(*porta);
+    extraction_port_a(*porta); /* extract all informations of port a and change values of alarms */
 
     return 0;
 }
@@ -21,7 +21,8 @@ int port_e()
 {
     unsigned char *porte;
     porte=(unsigned char *)0x0a;
-    extraction_port_e(*porte);
+    /*Cast values into pointers*/
+    extraction_port_e(*porte); /* extract all informations of port e and change values of alarms */
 
     return 0;
 }

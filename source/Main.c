@@ -8,13 +8,13 @@ int main()
 {
     int stop_main = 0;
 
-    init_all();
+    init_all(); /* initialize everything */
 
-    display();
+    display(); /* display informations about the alarms and zones */
 
-    while(!stop_main)
+    while(!stop_main) /* never stop */
     {
-        options_menu();
+        options_menu(); /* launch the menu */
     }
 
 	return 0;

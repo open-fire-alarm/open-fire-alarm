@@ -12,7 +12,7 @@ int activate_zones()
     {
         printf("zone 1 active = ");
         scanf("%d", &commande_utilisateur);
-    } while(!(commande_utilisateur==0 || commande_utilisateur==1));
+    } while(!(commande_utilisateur==0 || commande_utilisateur==1)); /* check the user command and ask again if it is not correct */
 	set_zones_active1(commande_utilisateur);
 
     do
@@ -29,7 +29,7 @@ int activate_zones()
     } while(!(commande_utilisateur==0 || commande_utilisateur==1));
 	set_zones_active3(commande_utilisateur);
 
-	update_mylog_zones_active();
+	update_mylog_zones_active(); /* add a line to the log with the time about which zones are active */
 
     return 0;
 }
@@ -42,7 +42,7 @@ int set_alarms ()
     {
         printf("alarm 1 = ");
         scanf("%d", &commande_utilisateur);
-    } while(!(commande_utilisateur==0 || commande_utilisateur==1));
+    } while(!(commande_utilisateur==0 || commande_utilisateur==1)); /* check the user command and ask again if it is not correct */
 	set_alarm1(commande_utilisateur);
 
     do
@@ -98,10 +98,10 @@ int set_alarms ()
     } while(!(commande_utilisateur==0 || commande_utilisateur==1));
 	set_alarm9(commande_utilisateur);
 
-    update_zones(); /* modifie les valeurs des zones automatiquement quand on change les valeurs des alarms */
+    update_zones(); /* values of zones are changed automatically with alarms values */
 
-    update_mylog_zones_on_fire();
-    update_mylog_alarms_on_fire();
+    update_mylog_zones_on_fire(); /* add a line to the log with the time about which zones are on fire */
+    update_mylog_alarms_on_fire(); /* add a line to the log with the time about which alarms are on fire */
 
 	return 0;
 }

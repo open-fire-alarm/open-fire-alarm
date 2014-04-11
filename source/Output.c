@@ -11,7 +11,7 @@ int port_g()
     *ddrg=0xff;
     /*Set DDRA to all outputs*/
 
-    /* traitement */
+    /* treatment */
     if(everything_is_safe()) /* everything is safe */
     {
         *portg = 0x00; /* no light */

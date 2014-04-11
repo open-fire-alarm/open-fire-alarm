@@ -41,8 +41,8 @@ int extraction_port_a(unsigned char interupteurs)
 int extraction_port_e(unsigned char interupteurs)
 {
     unsigned char tmp = interupteurs;
-    tmp = tmp & 0x01;
-	set_alarm9(tmp);
+    tmp = tmp & 0x01; /* extract the n bit with a mask */
+	set_alarm9(tmp); /* change the value of alarm n */
 /* if you want stop automatic_loop_microprocessor() with E2 take this code
     tmp = interupteurs;
 	tmp = tmp & 0x02;
