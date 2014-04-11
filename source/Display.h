@@ -1,3 +1,3 @@
 /* Display.h */
 
-int display(); /* display all the informations you want have */
+int display(); /* display informations about the alarms and zones */

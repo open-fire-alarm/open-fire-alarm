@@ -1,3 +1,3 @@
 /* Sleep.h */
 
-int sleep(int limit); /* a function to slow down the program */
+int sleep(int limit); /* a function to do a little break */
