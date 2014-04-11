@@ -9,7 +9,7 @@
 
 /* Options_menu.c */
 
-int options_menu()
+int options_menu() /* launch the menu */
 {
     int commande_utilisateur;
 
@@ -58,6 +58,7 @@ int options_menu()
     }
     if(commande_utilisateur == 6)
     {
+        /* print the log */
         print_mylog();
         return 0;
     }
