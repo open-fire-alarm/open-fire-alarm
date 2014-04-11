@@ -1,8 +1,8 @@
 /* Alarm.h */
 
-int init_alarms(); /* initialization of alarms */
-int init_zone(); /* initialization of zone */
-int init_zone_active(); /* initialization of which zones are active */
+int init_alarms(); /* initialization of alarms (all are safe) */
+int init_zone(); /* initialization of zone (all are safe) */
+int init_zone_active(); /* initialization of which zones are active (all are deactivated) */
 
 int update_zones(); /* values of zones are changed automatically with alarms values */
 
