@@ -1,3 +1,3 @@
 /* Display.h */
 
-int display();
+int display(); /* display all the informations you want have */
