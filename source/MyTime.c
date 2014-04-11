@@ -2,6 +2,8 @@
 #include <string.h>
 #include <time.h>
 
+/* MyTime.c */
+
 int return_time(char *string_time)
 {
     time_t t = time(NULL);

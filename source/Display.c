@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "Alarm.h"
 
+/* Display.c */
+
 int display_zones_active()
 {
     if(get_zones_active1())

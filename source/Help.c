@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+/* Help.c */
+
 int print_help()
 {
     printf("Alarms are safe when alarm1 = 1 and on fire when alarm1 = 0 for example.\n\r");

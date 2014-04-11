@@ -7,6 +7,8 @@
 #include"Sleep.h"
 #include"Mygetchar.h"
 
+/* Automatic_loop.c */
+
 int do_you_want_return_to_the_menu()
 {
     int commande_utilisateur;

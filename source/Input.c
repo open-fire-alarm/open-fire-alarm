@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include "Extraction.h"
 
+/* Input.c */
+
 int port_a()
 {
     unsigned char *porta,*ddra;

@@ -1,3 +1,5 @@
+/* Mygetchar.c */
+
 unsigned char mygetchar()
 {
     unsigned char key;

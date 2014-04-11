@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+/* Password.c */
+
 char password[200];
 
 int init_password()

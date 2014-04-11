@@ -1,5 +1,7 @@
 #include "Alarm.h"
 
+/* Extraction.c */
+
 int extraction_port_a(unsigned char interupteurs)
 {
 	unsigned char tmp = interupteurs;

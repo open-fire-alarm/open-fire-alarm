@@ -3,6 +3,8 @@
 #include"Password.h"
 #include"Mylog.h"
 
+/* Init.c */
+
 int init_all()
 {
     printf("initialization...\n\r");

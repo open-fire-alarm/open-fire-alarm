@@ -3,6 +3,8 @@
 #include "MyTime.h"
 #include "Alarm.h"
 
+/* Mylog.c */
+
 char mylog[2000];
 
 int init_mylog()

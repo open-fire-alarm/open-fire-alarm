@@ -2,6 +2,8 @@
 #include "Display.h"
 #include "Options_menu.h"
 
+/* Main.c */
+
 int main()
 {
     int stop_main = 0;
