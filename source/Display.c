@@ -60,7 +60,7 @@ int display_the_situation()
 {
     if(get_zones_active1())
     {
-        if(get_zone1())
+        if(get_zone1()) /* if zone n safe then print "zone n safe" else print zone n on fire and print all the alarms in the zone n */
         {
             printf("zone 1 safe\n\r");
         }

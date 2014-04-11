@@ -5,11 +5,11 @@
 int extraction_port_a(unsigned char interupteurs)
 {
 	unsigned char tmp = interupteurs;
-    tmp = tmp & 0x01;
-	set_alarm1(tmp);
+    tmp = tmp & 0x01; /* extract the n bit with a mask */
+	set_alarm1(tmp); /* change the value of alarm n */
     tmp = interupteurs;
 	tmp = tmp & 0x02;
-	tmp = tmp >> 1;
+	tmp = tmp >> 1; /* after extract the n bit with a mask you should shift the bit to the fist place */
 	set_alarm2(tmp);
     tmp = interupteurs;
 	tmp = tmp & 0x04;
